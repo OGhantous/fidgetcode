@@ -2,8 +2,7 @@ input.onButtonPressed(Button.A, function () {
     basic.showIcon(Checkmark)
 })
 input.onSound(DetectedSound.Loud, function () {
-    music.setVolume(255)
-    music.playTone(698, music.beat(BeatFraction.Eighth))
+    basic.showIcon(IconNames.Happy)
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showIcon(Smile)
@@ -11,8 +10,8 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     basic.showIcon(X)
 })
-input.onSound(DetectedSound.Quiet, function () {
-    music.setBuiltInSpeakerEnabled(false)
+input.onGesture(Gesture.Shake, function () {
+	
 })
 let Checkmark = IconNames.Yes;
 let X = IconNames.No;
